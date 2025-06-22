@@ -1,0 +1,46 @@
+{
+  "name": "dr-strange",
+  "version": "1.0.0",
+  "description": "AI-powered drug interaction prediction platform for healthcare professionals",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "^5.0.0",
+    "tailwindcss": "^3.3.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "axios": "^1.6.0",
+    "framer-motion": "^10.16.0",
+    "lucide-react": "^0.292.0",
+    "recharts": "^2.8.0",
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-select": "^2.0.0",
+    "@radix-ui/react-toast": "^1.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^14.0.0"
+  },
+  "keywords": [
+    "drug-interactions",
+    "ai",
+    "healthcare",
+    "medicine",
+    "prediction"
+  ],
+  "author": "Hackathon Team",
+  "license": "MIT"
+} 

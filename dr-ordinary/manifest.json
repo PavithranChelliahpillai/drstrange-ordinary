@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Dr. Ordinary - Drug Interaction Detector",
+  "version": "1.0.0",
+  "description": "AI-powered drug interaction detector that warns users about potential conflicts when searching for medications",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "background": {
+    "service_worker": "background/service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/detector.js"],
+      "css": ["content/styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Dr. Ordinary"
+  },
+  "options_page": "settings.html",
+  "web_accessible_resources": [
+    {
+      "resources": ["content/warning.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+} 

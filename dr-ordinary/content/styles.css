@@ -1,0 +1,92 @@
+/* Dr. Ordinary - Content Script Styles */
+
+.dr-ordinary-highlight {
+  background-color: #fffbe6 !important;
+  border: 1px solid #ffe58f !important;
+  border-radius: 3px !important;
+  padding: 0 2px !important;
+  font-weight: 600 !important;
+  cursor: help !important;
+  font-family: inherit !important;
+  color: inherit !important;
+}
+
+.dr-ordinary-highlight:hover {
+  background-color: #ffeaa7 !important;
+  border-color: #fdcb6e !important;
+  transform: scale(1.02) !important;
+}
+
+.dr-ordinary-warning {
+  position: fixed !important;
+  top: 20px !important;
+  right: 20px !important;
+  background: #f8d7da !important;
+  border: 1px solid #f5c6cb !important;
+  border-radius: 8px !important;
+  padding: 15px !important;
+  max-width: 300px !important;
+  z-index: 10000 !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  font-family: Arial, sans-serif !important;
+  font-size: 14px !important;
+  animation: slideIn 0.3s ease-out !important;
+}
+
+.dr-ordinary-popup {
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  background: white !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  padding: 10px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+  z-index: 1000 !important;
+  max-width: 200px !important;
+  font-size: 12px !important;
+  animation: fadeIn 0.2s ease-out !important;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* High severity warnings */
+.dr-ordinary-warning.high-severity {
+  background: #f8d7da !important;
+  border-color: #f5c6cb !important;
+  color: #721c24 !important;
+}
+
+/* Medium severity warnings */
+.dr-ordinary-warning.medium-severity {
+  background: #fff3cd !important;
+  border-color: #ffeeba !important;
+  color: #856404 !important;
+}
+
+/* Low severity warnings */
+.dr-ordinary-warning.low-severity {
+  background: #d1ecf1 !important;
+  border-color: #bee5eb !important;
+  color: #0c5460 !important;
+} 
