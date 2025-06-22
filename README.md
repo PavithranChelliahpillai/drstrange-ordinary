@@ -54,7 +54,3 @@ An online website that allows doctors/pharmacists to enter 2 drugs and predictiv
 Each component has its own development workflow. See individual README files in:
 - `dr-ordinary/README.md`
 - `dr-strange/README.md`
-
-## Contributing
-
-This is a hackathon project. Feel free to contribute ideas and improvements! 
